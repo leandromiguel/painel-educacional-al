@@ -1,0 +1,32 @@
+# Dados brutos e processados (arquivos grandes, não versionamos)
+data/raw/
+data/processed/
+data/external/
+
+# Outputs gerados
+outputs/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb~
+
+# Ambiente virtual
+.venv/
+env/
+
+# IDEs
+.vscode/
+.idea/
+
+# SO
+.DS_Store
+Thumbs.db
+
+# Segredos
+.env
+secrets.py
