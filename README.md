@@ -18,7 +18,7 @@ Esta etapa foi escolhida por três motivos:
 1. Alagoas está convergindo ou divergindo da média nacional no IDEB desde 2005?
 2. Quais municípios mais melhoraram e mais pioraram entre 2005 e 2023?
 3. Qual item de infraestrutura escolar tem maior correlação com o IDEB?
-4. Gasto por aluno (FUNDEB) explica o desempenho no IDEB?
+4. Qual é o perfil dos municípios que já atingiram a meta do IDEB de 6.0?
 
 ## Fontes de dados
 
