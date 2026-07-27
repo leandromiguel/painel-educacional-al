@@ -95,6 +95,7 @@ Navegue pelas páginas no menu lateral para explorar as análises:
 - **Municípios** — quem mais melhorou e mais piorou
 - **Infraestrutura** — relação entre estrutura escolar e IDEB
 - **Meta 6.0** — municípios que já atingiram a média nacional
+- **Mapa** - mapa coroplético
 """)
 
 st.info(
