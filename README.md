@@ -25,8 +25,8 @@ Esta etapa foi escolhida por três motivos:
 | Fonte | Dataset | Período | Uso no projeto |
 |-------|---------|---------|----------------|
 | INEP | IDEB municipal — EF Anos Iniciais | 2005–2023 | Indicador principal de desempenho |
-| INEP | Censo Escolar — infraestrutura escolar | 2023 | Variáveis explicativas |
-| FNDE | Valor aluno/ano FUNDEB por município | A definir | Variável de investimento |
+| INEP | Censo Escolar — infraestrutura escolar | 2023 | Variáveis explicativas (infraestrutura) |
+| IBGE | Shapefile municípios de Alagoas | 2022 | Mapa coroplético |
 
 ## Estrutura de pastas
 
@@ -34,7 +34,8 @@ Esta etapa foi escolhida por três motivos:
     │
     ├── data/
     │   ├── raw/
-    │   │   └── inep/          # dados brutos baixados do INEP (não versionado)
+    │   │   ├── inep/          # IDEB + Censo Escolar (não versionado)
+    │   │   └── ibge/          # shapefile municípios AL (não versionado)
     │   ├── processed/         # datasets limpos e integrados (não versionado)
     │   └── external/          # dados auxiliares
     │
@@ -42,12 +43,19 @@ Esta etapa foi escolhida por três motivos:
     │   ├── 01_limpeza.ipynb           # ETL — leitura, filtro, tidy, salva parquet
     │   ├── 02_eda.ipynb               # Perguntas 1 e 2 — convergência e variação
     │   ├── 03_infraestrutura.ipynb    # Pergunta 3 — infraestrutura vs IDEB
-    │   └── 04_fundeb.ipynb            # Pergunta 4 — gasto por aluno vs IDEB
+    │   └── 04_meta_ideb.ipynb         # Pergunta 4 — municípios que atingiram meta 6.0
+    │
+    ├── pages/
+    │   ├── 01_visao_geral.py
+    │   ├── 02_municipios.py
+    │   ├── 03_infraestrutura.py
+    │   ├── 04_meta.py
+    │   └── 05_mapa.py
     │
     ├── src/
     │   └── config.py                  # caminhos e constantes centralizados
     │
-    ├── app.py                         # dashboard Streamlit (a desenvolver)
+    ├── app.py                         # dashboard Streamlit
     ├── environment.yml                # ambiente conda reproduzível
     └── README.md
 
