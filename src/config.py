@@ -1,7 +1,7 @@
 """
 Configuração central do projeto.
 Todos os caminhos, constantes e parâmetros ficam aqui.
-Importe este módulo nos outros scripts em vez de hardcodar strings.
+Este módulo é importado nos outros scripts em vez de hardcodar strings.
 """
 
 from pathlib import Path
@@ -19,6 +19,7 @@ DATA_PROC     = ROOT / "data" / "processed"
 
 # ── Arquivos processados (gerados pelo ETL, consumidos pelo dashboard) ────────
 MUNICIPIOS_PARQUET  = DATA_PROC / "municipios_al.parquet"
+INFRA_PARQUET = DATA_PROC / "infra_municipios_al.parquet"
 SHAPEFILE_AL        = DATA_PROC / "municipios_al.gpkg"
 IDEB_SERIES_PARQUET = DATA_PROC / "ideb_series_al.parquet"
 

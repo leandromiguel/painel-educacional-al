@@ -32,12 +32,8 @@ def carregar_ideb():
 
 @st.cache_data
 def carregar_censo():
-    censo_path = (
-        DATA_INEP
-        / "microdados_censo_escolar_2023"
-        / "dados"
-        / "microdados_ed_basica_2023.csv"
-    )
+    from src.config import INFRA_PARQUET
+    return pd.read_parquet(INFRA_PARQUET)
 
     COLUNAS = [
         "CO_UF", "CO_MUNICIPIO", "NO_MUNICIPIO",
